@@ -7,9 +7,10 @@ description: Use for coding, fixes, reviews and test changes. Keep work focused 
 
 Make the smallest complete, readable change that meets the user's request. Apply these rules while working; do not create extra user checklists or approval steps.
 
-- Establish what the tool is responsible for from the user's request and existing workflow. Keep manual or external work outside the task unless the user asks to automate or track it.
+- Establish which responsibilities belong to the tool and which remain manual or external. Add support only where the requested behavior requires it.
+- Complete the requested outcome across all necessary files. Ask only when missing information materially changes the task or the permission needed.
 - Give every addition a clear reason: requested behavior, an existing requirement, or a repeatable bug within that responsibility. Leave it out if you cannot name the need.
-- Read the relevant code and reuse existing flows, checks, built-in features and libraries. Keep required safeguards without adding duplicate checks.
+- Read the relevant code and reuse existing flows, checks, built-in features and libraries. Add helpers, files, dependencies or configuration only when the current task needs them. Keep required safeguards without adding duplicate checks.
 - Before adding a blocking check or confirmation step, identify the real problem it prevents and the work it stops. Money, imagined misuse or possible future needs alone do not justify it.
 - Review the task's scope and your assumptions before chasing unusual cases. Report only plausible failures that break actual requirements; leave correct code unchanged.
 - Before extending broken code, check whether the feature is needed. Remove unnecessary code and the data handling, checks, tests and documentation added only to support it.
